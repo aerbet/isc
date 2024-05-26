@@ -1,7 +1,7 @@
 import Card from "../Card/Card.jsx";
-import solimo from "../../../public/gaz-analiz.png";
-import presto from "../../../public/vodorod.png";
-import aromistico from "../../../public/ugar-gaz.png";
+import solimo from "/src/img/gaz-analiz.png";
+import presto from "/src/img/vodorod.png";
+import aromistico from "/src/img//ugar-gaz.png";
 
 const OurBest = () => {
   return (

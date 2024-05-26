@@ -1,7 +1,6 @@
 {
   "name": "isc",
   "private": true,
-  "homepage":"https://github.com/aerbet/isc.git",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

@@ -1,7 +1,7 @@
 import Mountain from "../Mountains/Mountain.jsx";
 import Navbar from "../Navbar/Navbar.jsx";
 
-import blackBeans from "../../../public/mountains.svg";
+import blackBeans from "/src/img/mountains.svg";
 
 const Footer = () => {
   return (

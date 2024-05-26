@@ -1,5 +1,5 @@
 import Mountain from "../Mountains/Mountain.jsx";
-import blackBeans from "../../../public/mountains.svg";
+import blackBeans from "/src/img/mountains.svg";
 
 import PropTypes from "prop-types";
 import {Link} from "react-router-dom";

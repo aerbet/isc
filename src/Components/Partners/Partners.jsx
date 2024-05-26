@@ -14,7 +14,7 @@ const Partners = () => {
 				>
 				</iframe>
 				
-				{/*<img className="w-[650px] h-[370px]" src="../../../public/top10our.jpg" alt="top10"/>*/}
+				{/*<img className="w-[650px] h-[370px]" src="../../../img/top10our.jpg" alt="top10"/>*/}
 				
 				<span className="text-xl mt-8 w-1/2 mb-24">
 					Rio Tinto - ведущая мировая горнодобывающая компания, специализирующаяся на поиске, добыче и переработке минеральных ресурсов Земли.

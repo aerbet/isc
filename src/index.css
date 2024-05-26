@@ -16,17 +16,17 @@ body {
 }
 
 .header {
-    background: url(public/background.webp) center center / cover no-repeat;
+    background: url(img/background.webp) center center / cover no-repeat;
     height: 840px;
 }
 
 .ourHeader {
-    background: url(public/background.webp) center center / cover no-repeat;
+    background: url(img/background.webp) center center / cover no-repeat;
     height: 270px;
 }
 
 .forHeader {
-    background: url(public/background.webp) center center / cover no-repeat;
+    background: url(img/background.webp) center center / cover no-repeat;
     height: 270px;
 }
 
@@ -35,17 +35,11 @@ body {
 }
 
 .our {
-    background: url(public/human-bg-gor.jpg) center center / cover no-repeat;
+    background: url(img/human-bg-gor.jpg) center center / cover no-repeat;
 }
 
 .white-logo {
-    background: url(public/white-logo.svg) center center no-repeat;
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-}
-.black-logo {
-    background: url(public/black-logo.svg) center center no-repeat;
+    background: url(img/white-logo.svg) center center no-repeat;
     display: inline-block;
     width: 35px;
     height: 35px;

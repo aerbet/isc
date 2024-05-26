@@ -1,7 +1,7 @@
 import Header from "../../Components/Header/Header.jsx";
 import About from "../../Components/About/About.jsx";
 
-import gaz from "../../../public/gaz-analiz.png"
+import gaz from "/src/img/gaz-analiz.png"
 
 
 const ItemPage = () => {
