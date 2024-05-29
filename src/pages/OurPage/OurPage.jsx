@@ -6,9 +6,9 @@ import Footer from "../../Components/Footer/Footer.jsx";
 import ItemFilter from "../../Components/ItemFilter/ItemFilter.jsx";
 import SearchPanel from "../../Components/SearchPanel/SearchPanel.jsx";
 
-import venezia from "/src/img/mutnost.jpg";
-import roma from "/src/img/compact.jpg";
-import napoli from "/src/img/o2-izmer.jpg";
+import venezia from "/src/img/tahometr.jpg";
+import roma from "/src/img/seismometr.jpg";
+import napoli from "/src/img/termograf.jpg";
 
 import gaz from "/src/img/gaz-analiz.png"
 import gaz1 from "/src/img/kislor.png"
@@ -38,9 +38,9 @@ class OurPage extends Component {
     super(props);
     this.state = {
       data: [
-        {title: 'Трансмиттер мутности', country: 'Россия', price: '6.99$', img: venezia},
-        {title: 'Компактный трансмиттер', country: 'Россия', price: '6.99$', img: roma},
-        {title: 'Измеритель кислорода', country: 'Россия', price: '6.99$', img: napoli},
+        {title: 'Тахометр Chauvin Arnoux', country: 'Россия', price: '269.99$', img: venezia},
+        {title: 'Сейсморадар PSI Piletest', country: 'Россия', price: '269.99$', img: roma},
+        {title: 'Термограф Dahua', country: 'Россия', price: '269.99$', img: napoli},
       ],
       data2: [
         {title: 'Газоанализатор метана (CH4)', country: 'Китай', price: '300.99$', img: gaz},
@@ -134,7 +134,38 @@ class OurPage extends Component {
                           onCountryFilterSelect={this.onCountryFilterSelect}/>
             </aside>
             <div className="">
-              <div className="grid grid-cols-3 mt-20 pb-10">
+              
+              <div className="mt-20 pb-10">
+                <div className="flex drop-shadow-lg">
+                  {filteredData.map((coffee, index) => (
+                    <Card
+                      key={index + 1}
+                      title={coffee.title}
+                      cardImg={coffee.img}
+                      cardTitle={coffee.title}
+                      cardCountry={coffee.country}
+                      cardPrice={coffee.price}
+                    />
+                  ))}
+                </div>
+              </div>
+              
+              <div className="pb-10">
+                <div className="flex drop-shadow-lg">
+                  {filteredData2.map((coffee, index) => (
+                    <Card
+                      key={index + 1}
+                      title={coffee.title}
+                      cardImg={coffee.img}
+                      cardTitle={coffee.title}
+                      cardCountry={coffee.country}
+                      cardPrice={coffee.price}
+                    />
+                  ))}
+                </div>
+              </div>
+              
+              <div className="pb-10">
                 <div className="flex drop-shadow-lg">
                   {filteredData6.map((coffee, index) => (
                     <Card
@@ -166,37 +197,7 @@ class OurPage extends Component {
               
               <div className="pb-10">
                 <div className="flex drop-shadow-lg">
-                  {filteredData.map((coffee, index) => (
-                    <Card
-                      key={index + 1}
-                      title={coffee.title}
-                      cardImg={coffee.img}
-                      cardTitle={coffee.title}
-                      cardCountry={coffee.country}
-                      cardPrice={coffee.price}
-                    />
-                  ))}
-                </div>
-              </div>
-              
-              <div className="pb-10">
-                <div className="flex drop-shadow-lg">
                   {filteredData4.map((coffee, index) => (
-                    <Card
-                      key={index + 1}
-                      title={coffee.title}
-                      cardImg={coffee.img}
-                      cardTitle={coffee.title}
-                      cardCountry={coffee.country}
-                      cardPrice={coffee.price}
-                    />
-                  ))}
-                </div>
-              </div>
-              
-              <div className="pb-10">
-                <div className="flex drop-shadow-lg">
-                  {filteredData2.map((coffee, index) => (
                     <Card
                       key={index + 1}
                       title={coffee.title}

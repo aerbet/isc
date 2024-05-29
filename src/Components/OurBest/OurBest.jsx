@@ -1,7 +1,7 @@
 import Card from "../Card/Card.jsx";
-import solimo from "/src/img/gaz-analiz.png";
-import presto from "/src/img/vodorod.png";
-import aromistico from "/src/img//ugar-gaz.png";
+import solimo from "/src/img/tahometr.jpg";
+import presto from "/src/img/seismometr.jpg";
+import aromistico from "/src/img/termograf.jpg";
 
 const OurBest = () => {
   return (
@@ -12,14 +12,14 @@ const OurBest = () => {
         <div className="justify-between pb-28">
           <div className="flex justify-evenly">
             <Card cardImg={solimo}
-                  cardTitle={"Газоанализатор метана (CH4)"}
-                  cardPrice={"10.73$"}/>
+                  cardTitle={"Тахометр Chauvin Arnoux"}
+                  cardPrice={"269.99$"}/>
             <Card cardImg={presto}
-                  cardTitle={"Газоанализатор кислорода (O2)"}
-                  cardPrice={"15.99$"}/>
+                  cardTitle={"Сейсморадар PSI Piletest"}
+                  cardPrice={"269.99$"}/>
             <Card cardImg={aromistico}
-                  cardTitle={"Газоанализатор угарного газа: GPro 500"}
-                  cardPrice={"6.99$"}/>
+                  cardTitle={"Термограф Dahua"}
+                  cardPrice={"269.99$"}/>
           </div>
         </div>
       </div>
