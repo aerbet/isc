@@ -4,7 +4,7 @@ const ItemFilter = (props) => {
   const buttonsData = [
     {name: 'все', label: 'Все'},
     
-    {name: 'тахометр Chauvin Arnoux', label: 'Тахометр Arnoux'},
+    {name: 'тахометр Chauvin Arnoux', label: 'Тахометр'},
     {name: 'сейсморадар PSI Piletest', label: 'Сейсморадар'},
     {name: 'термограф Dahua', label: 'Термограф'},
     
@@ -16,7 +16,7 @@ const ItemFilter = (props) => {
     {name: 'роботизированный компаратор', label: 'Роботизиров...'},
     {name: 'компаратор массы', label: 'Компаратор массы'},
     
-    {name: 'автоподатчик InMotion™', label: 'Автоподатчик InMotion™'},
+    {name: 'автоподатчик InMotion™', label: 'Автоподатчик'},
     {name: 'гравиметрический анализатор', label: 'Гравиметриче...'},
     {name: 'синхронный термоанализатор', label: 'Синхронный терм...'},
     
@@ -33,7 +33,7 @@ const ItemFilter = (props) => {
     
     return (
       <button onClick={() => props.onCountryFilterSelect(name)}
-              className={`relative mb-3 flex h-[50px] w-40 items-center
+              className={`relative mb-3 flex h-[50px] w-40 px-4 items-center
       justify-center overflow-hidden bg-gray-800 text-white
       shadow-2xl transition-all before:absolute before:h-0 before:w-0
       before:rounded-full before:bg-blue-400 before:duration-500

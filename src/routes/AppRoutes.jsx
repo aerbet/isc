@@ -14,7 +14,7 @@ const AppRoutes = () => {
           <Route path="/our" element={<OurPage />}/>
           <Route path="/for" element={<ForPage />}/>
         
-          <Route path="/item" element={<ItemPage />}/>
+          <Route path="/item/:id" element={<ItemPage />}/>
       </Routes>
   );
 };

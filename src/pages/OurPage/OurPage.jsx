@@ -38,34 +38,34 @@ class OurPage extends Component {
     super(props);
     this.state = {
       data: [
-        {title: 'Тахометр Chauvin Arnoux', country: 'Россия', price: '269.99$', img: venezia},
-        {title: 'Сейсморадар PSI Piletest', country: 'Россия', price: '269.99$', img: roma},
-        {title: 'Термограф Dahua', country: 'Россия', price: '269.99$', img: napoli},
+        {title: 'Тахометр Chauvin Arnoux', country: 'Россия', price: '269.99$', img: venezia, id: 1},
+        {title: 'Сейсморадар PSI Piletest', country: 'Россия', price: '269.99$', img: roma, id: 2},
+        {title: 'Термограф Dahua', country: 'Россия', price: '269.99$', img: napoli, id: 3},
       ],
       data2: [
-        {title: 'Газоанализатор метана (CH4)', country: 'Китай', price: '300.99$', img: gaz},
-        {title: 'Газоанализатор кислорода (O2)', country: 'Китай', price: '600.99$', img: gaz1},
-        {title: 'Газоанализатор угарного газа', country: 'Китай', price: '269.99$', img: gaz2},
+        {title: 'Газоанализатор метана (CH4)', country: 'Китай', price: '300.99$', img: gaz, id: 4},
+        {title: 'Газоанализатор кислорода (O2)', country: 'Китай', price: '600.99$', img: gaz1, id: 5},
+        {title: 'Газоанализатор угарного газа', country: 'Китай', price: '269.99$', img: gaz2, id: 6},
       ],
       data3: [
-        {title: 'Датчик CO2 InFit 761e', country: 'Россия', price: '200.99$', img: datchik},
-        {title: 'Корпус датчика CO2 InFit 761e', country: 'Россия', price: '600.99$', img: datchik2},
-        {title: 'Датчик электропроводности', country: 'Россия', price: '269.99$', img: datchik3},
+        {title: 'Датчик CO2 InFit 761e', country: 'Россия', price: '200.99$', img: datchik, id: 7},
+        {title: 'Корпус датчика CO2 InFit 761e', country: 'Россия', price: '600.99$', img: datchik2, id: 8},
+        {title: 'Датчик электропроводности', country: 'Россия', price: '269.99$', img: datchik3, id: 9},
       ],
       data4: [
-        {title: 'Трансмиттер M400G 2XH', country: 'Китай', price: '300.99$', img: trans1},
-        {title: 'Поточный анализатор', country: 'Китай', price: '600.99$', img: trans2},
-        {title: 'Датчик 4000TOCe', country: 'Китай', price: '269.99$', img: trans3},
+        {title: 'Трансмиттер M400G 2XH', country: 'Китай', price: '300.99$', img: trans1, id: 10},
+        {title: 'Поточный анализатор', country: 'Китай', price: '600.99$', img: trans2, id: 11},
+        {title: 'Датчик 4000TOCe', country: 'Китай', price: '269.99$', img: trans3, id: 12},
       ],
       data5: [
-        {title: 'Автоподатчик InMotion™', country: 'Россия', price: '300.99$', img: avto},
-        {title: 'Гравиметрический анализатор', country: 'Россия', price: '600.99$', img: avto1},
-        {title: 'Синхронный термоанализатор', country: 'Россия', price: '269.99$', img: avto2},
+        {title: 'Автоподатчик InMotion™', country: 'Россия', price: '300.99$', img: avto, id: 13},
+        {title: 'Гравиметрический анализатор', country: 'Россия', price: '600.99$', img: avto1, id: 14},
+        {title: 'Синхронный термоанализатор', country: 'Россия', price: '269.99$', img: avto2, id: 15},
       ],
       data6: [
-        {title: 'Вакуумный компаратор массы', country: 'Китай', price: '300.99$', img: vakuum},
-        {title: 'Роботизированный компаратор', country: 'Китай', price: '600.99$', img: vakuum1},
-        {title: 'Компаратор массы', country: 'Китай', price: '269.99$', img: vakuum2},
+        {title: 'Вакуумный компаратор массы', country: 'Китай', price: '300.99$', img: vakuum, id: 16},
+        {title: 'Роботизированный компаратор', country: 'Китай', price: '600.99$', img: vakuum1, id: 17},
+        {title: 'Компаратор массы', country: 'Китай', price: '269.99$', img: vakuum2, id: 18},
       ],
       term: '',
       countryFilter: 'все',
@@ -137,9 +137,10 @@ class OurPage extends Component {
               
               <div className="mt-20 pb-10">
                 <div className="flex drop-shadow-lg">
-                  {filteredData.map((coffee, index) => (
+                  {filteredData.map((coffee) => (
                     <Card
-                      key={index + 1}
+                      id={coffee.id}
+                      key={coffee.id}
                       title={coffee.title}
                       cardImg={coffee.img}
                       cardTitle={coffee.title}
@@ -152,9 +153,10 @@ class OurPage extends Component {
               
               <div className="pb-10">
                 <div className="flex drop-shadow-lg">
-                  {filteredData2.map((coffee, index) => (
+                  {filteredData2.map((coffee) => (
                     <Card
-                      key={index + 1}
+                      id={coffee.id}
+                      key={coffee.id}
                       title={coffee.title}
                       cardImg={coffee.img}
                       cardTitle={coffee.title}
@@ -167,9 +169,10 @@ class OurPage extends Component {
               
               <div className="pb-10">
                 <div className="flex drop-shadow-lg">
-                  {filteredData6.map((coffee, index) => (
+                  {filteredData6.map((coffee) => (
                     <Card
-                      key={index + 1}
+                      id={coffee.id}
+                      key={coffee.id}
                       title={coffee.title}
                       cardImg={coffee.img}
                       cardTitle={coffee.title}
@@ -182,9 +185,10 @@ class OurPage extends Component {
               
               <div className="pb-10">
                 <div className="flex drop-shadow-lg">
-                  {filteredData5.map((coffee, index) => (
+                  {filteredData5.map((coffee) => (
                     <Card
-                      key={index + 1}
+                      id={coffee.id}
+                      key={coffee.id}
                       title={coffee.title}
                       cardImg={coffee.img}
                       cardTitle={coffee.title}
@@ -197,9 +201,10 @@ class OurPage extends Component {
               
               <div className="pb-10">
                 <div className="flex drop-shadow-lg">
-                  {filteredData4.map((coffee, index) => (
+                  {filteredData4.map((coffee) => (
                     <Card
-                      key={index + 1}
+                      id={coffee.id}
+                      key={coffee.id}
                       title={coffee.title}
                       cardImg={coffee.img}
                       cardTitle={coffee.title}
@@ -212,9 +217,10 @@ class OurPage extends Component {
               
               <div className="pb-10">
                 <div className="flex drop-shadow-lg">
-                  {filteredData3.map((coffee, index) => (
+                  {filteredData3.map((coffee) => (
                     <Card
-                      key={index + 1}
+                      id={coffee.id}
+                      key={coffee.id}
                       title={coffee.title}
                       cardImg={coffee.img}
                       cardTitle={coffee.title}
