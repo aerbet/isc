@@ -302,8 +302,6 @@ const ItemPage = () => {
         </div>
         
         <div className="flex items-center justify-end">
-          <b>Цена: <span className="text-2xl">{product.price}</span></b>
-          
           <Link to="/our"
                 className="relative ml-20 rounded-md flex h-[40px] w-36 items-center justify-center overflow-hidden bg-gray-800 text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-blue-400 before:duration-500 before:ease-out hover:shadow-blue-700 hover:before:h-56 hover:before:w-56">
             <span className="relative z-10">В каталог</span>

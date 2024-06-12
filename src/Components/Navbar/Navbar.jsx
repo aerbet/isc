@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import PropTypes from "prop-types";
 
-const Navbar = ({ textColor, logoColor }) => {
+const Navbar = ({ textColor }) => {
   return (
     <nav className="navbar">
       <ul className={`flex jus items-center text-${textColor}`}>
@@ -27,7 +27,6 @@ const Navbar = ({ textColor, logoColor }) => {
 
 Navbar.propTypes = {
   textColor: PropTypes.string,
-  logoColor: PropTypes.string
 }
 
 export default Navbar;

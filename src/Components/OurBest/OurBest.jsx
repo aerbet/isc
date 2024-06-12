@@ -24,7 +24,6 @@ const OurBest = () => {
                 cardImg={item.img}
                 cardTitle={item.title}
                 cardCountry={item.country}
-                cardPrice={item.price}
               />
             ))}
           </div>

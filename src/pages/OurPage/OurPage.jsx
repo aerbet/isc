@@ -145,7 +145,6 @@ class OurPage extends Component {
                       cardImg={coffee.img}
                       cardTitle={coffee.title}
                       cardCountry={coffee.country}
-                      cardPrice={coffee.price}
                     />
                   ))}
                 </div>
@@ -161,7 +160,6 @@ class OurPage extends Component {
                       cardImg={coffee.img}
                       cardTitle={coffee.title}
                       cardCountry={coffee.country}
-                      cardPrice={coffee.price}
                     />
                   ))}
                 </div>
@@ -177,7 +175,6 @@ class OurPage extends Component {
                       cardImg={coffee.img}
                       cardTitle={coffee.title}
                       cardCountry={coffee.country}
-                      cardPrice={coffee.price}
                     />
                   ))}
                 </div>
@@ -193,7 +190,6 @@ class OurPage extends Component {
                       cardImg={coffee.img}
                       cardTitle={coffee.title}
                       cardCountry={coffee.country}
-                      cardPrice={coffee.price}
                     />
                   ))}
                 </div>
@@ -209,7 +205,6 @@ class OurPage extends Component {
                       cardImg={coffee.img}
                       cardTitle={coffee.title}
                       cardCountry={coffee.country}
-                      cardPrice={coffee.price}
                     />
                   ))}
                 </div>
@@ -225,7 +220,6 @@ class OurPage extends Component {
                       cardImg={coffee.img}
                       cardTitle={coffee.title}
                       cardCountry={coffee.country}
-                      cardPrice={coffee.price}
                     />
                   ))}
                 </div>

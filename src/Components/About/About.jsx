@@ -2,7 +2,6 @@ import Mountain from "../Mountains/Mountain.jsx";
 import blackBeans from "/src/img/mountains.svg";
 
 import PropTypes from "prop-types";
-import {Link} from "react-router-dom";
 import Description from "../Description/Description.jsx";
 
 const About = ({ aboutTitle, aboutBeans, aboutImg, imgName, aboutSpan, aboutSpanB, aboutSpanHide}) => {
@@ -45,6 +44,7 @@ About.propTypes = {
   aboutSpan: PropTypes.string,
   aboutSpanHide: PropTypes.string,
   imgName: PropTypes.string,
+  aboutSpanB: PropTypes
 }
 
 export default About;
